@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- Light background -->
+  <rect width="800" height="500" fill="#e8eef3"/>
+  
+  <!-- Blue circles/dots in background (various sizes and shades) -->
+  <circle cx="120" cy="80" r="35" fill="#90caf9" opacity="0.6"/>
+  <circle cx="180" cy="200" r="25" fill="#64b5f6" opacity="0.6"/>
+  <circle cx="100" cy="320" r="30" fill="#90caf9" opacity="0.6"/>
+  <circle cx="150" cy="420" r="20" fill="#42a5f5" opacity="0.6"/>
+  
+  <circle cx="680" cy="90" r="40" fill="#2196f3" opacity="0.7"/>
+  <circle cx="620" cy="180" r="30" fill="#64b5f6" opacity="0.6"/>
+  <circle cx="700" cy="300" r="45" fill="#1976d2" opacity="0.7"/>
+  <circle cx="650" cy="420" r="35" fill="#2196f3" opacity="0.7"/>
+  
+  <circle cx="250" cy="50" r="20" fill="#90caf9" opacity="0.5"/>
+  <circle cx="550" cy="60" r="25" fill="#64b5f6" opacity="0.6"/>
+  <circle cx="400" cy="450" r="30" fill="#42a5f5" opacity="0.6"/>
+  
+  <!-- Elongated pills/ovals -->
+  <ellipse cx="80" cy="150" rx="15" ry="45" fill="#bbdefb" opacity="0.6"/>
+  <ellipse cx="720" cy="200" rx="15" ry="50" fill="#1e88e5" opacity="0.7"/>
+  <ellipse cx="400" cy="80" rx="40" ry="15" fill="#90caf9" opacity="0.5"/>
+  
+  <!-- Central Vertex AI hexagon icon -->
+  <g transform="translate(400, 250)">
+    <!-- Hexagon shape -->
+    <path d="M 0,-80 L 69,-40 L 69,40 L 0,80 L -69,40 L -69,-40 Z" fill="#4285f4" opacity="0.95"/>
+    
+    <!-- Inner hexagon with layers -->
+    <path d="M 0,-65 L 56,-32 L 56,32 L 0,65 L -56,32 L -56,-32 Z" fill="white" opacity="0.15"/>
+    
+    <!-- Stacked layers inside -->
+    <rect x="-40" y="-15" width="80" height="10" rx="2" fill="white" opacity="0.9"/>
+    <rect x="-40" y="0" width="80" height="10" rx="2" fill="white" opacity="0.9"/>
+    <rect x="-40" y="15" width="80" height="10" rx="2" fill="white" opacity="0.9"/>
+  </g>
+  
+  <!-- Animated Kohl's Cash bills flowing around the center -->
+  <!-- Cash 1 - flowing from left to right above center -->
+  <g opacity="0.9">
+    <path d="M 0,0 Q 20,-10 40,0 Q 60,10 80,0 Q 60,-10 40,0 Q 20,10 0,0" fill="#7cb342" stroke="#558b2f" stroke-width="2">
+      <animateTransform attributeName="transform" type="translate" 
+        values="150,180; 250,160; 350,150; 450,160; 550,180; 650,200" 
+        dur="4s" repeatCount="indefinite"/>
+    </path>
+    <text x="40" y="5" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" 
+        values="150,180; 250,160; 350,150; 450,160; 550,180; 650,200" 
+        dur="4s" repeatCount="indefinite"/>
+      $
+    </text>
+  </g>
+  
+  <!-- Cash 2 - flowing from right to left below center -->
+  <g opacity="0.9">
+    <path d="M 0,0 Q 20,-10 40,0 Q 60,10 80,0 Q 60,-10 40,0 Q 20,10 0,0" fill="#7cb342" stroke="#558b2f" stroke-width="2">
+      <animateTransform attributeName="transform" type="translate" 
+        values="650,320; 550,340; 450,350; 350,340; 250,320; 150,300" 
+        dur="4.5s" repeatCount="indefinite"/>
+    </path>
+    <text x="40" y="5" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" 
+        values="650,320; 550,340; 450,350; 350,340; 250,320; 150,300" 
+        dur="4.5s" repeatCount="indefinite"/>
+      $
+    </text>
+  </g>
+  
+  <!-- Cash 3 - flowing diagonally top-left to bottom-right -->
+  <g opacity="0.9">
+    <path d="M 0,0 Q 20,-10 40,0 Q 60,10 80,0 Q 60,-10 40,0 Q 20,10 0,0" fill="#7cb342" stroke="#558b2f" stroke-width="2">
+      <animateTransform attributeName="transform" type="translate" 
+        values="200,120; 280,160; 360,200; 440,240; 520,280; 600,320" 
+        dur="5s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+    <text x="40" y="5" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" 
+        values="200,120; 280,160; 360,200; 440,240; 520,280; 600,320" 
+        dur="5s" begin="0.5s" repeatCount="indefinite"/>
+      $
+    </text>
+  </g>
+  
+  <!-- Cash 4 - flowing diagonally bottom-left to top-right -->
+  <g opacity="0.9">
+    <path d="M 0,0 Q 20,-10 40,0 Q 60,10 80,0 Q 60,-10 40,0 Q 20,10 0,0" fill="#7cb342" stroke="#558b2f" stroke-width="2">
+      <animateTransform attributeName="transform" type="translate" 
+        values="200,380; 280,340; 360,300; 440,260; 520,220; 600,180" 
+        dur="5s" begin="1s" repeatCount="indefinite"/>
+    </path>
+    <text x="40" y="5" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" 
+        values="200,380; 280,340; 360,300; 440,260; 520,220; 600,180" 
+        dur="5s" begin="1s" repeatCount="indefinite"/>
+      $
+    </text>
+  </g>
+  
+  <!-- Cash 5 - flowing from top to bottom on left side -->
+  <g opacity="0.9">
+    <path d="M 0,0 Q 20,-10 40,0 Q 60,10 80,0 Q 60,-10 40,0 Q 20,10 0,0" fill="#7cb342" stroke="#558b2f" stroke-width="2">
+      <animateTransform attributeName="transform" type="translate" 
+        values="180,100; 200,150; 220,200; 240,250; 260,300; 280,350" 
+        dur="4.2s" begin="1.5s" repeatCount="indefinite"/>
+    </path>
+    <text x="40" y="5" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" 
+        values="180,100; 200,150; 220,200; 240,250; 260,300; 280,350" 
+        dur="4.2s" begin="1.5s" repeatCount="indefinite"/>
+      $
+    </text>
+  </g>
+  
+  <!-- Cash 6 - flowing from bottom to top on right side -->
+  <g opacity="0.9">
+    <path d="M 0,0 Q 20,-10 40,0 Q 60,10 80,0 Q 60,-10 40,0 Q 20,10 0,0" fill="#7cb342" stroke="#558b2f" stroke-width="2">
+      <animateTransform attributeName="transform" type="translate" 
+        values="580,400; 560,350; 540,300; 520,250; 500,200; 480,150" 
+        dur="4.8s" begin="2s" repeatCount="indefinite"/>
+    </path>
+    <text x="40" y="5" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" 
+        values="580,400; 560,350; 540,300; 520,250; 500,200; 480,150" 
+        dur="4.8s" begin="2s" repeatCount="indefinite"/>
+      $
+    </text>
+  </g>
+  
+</svg>

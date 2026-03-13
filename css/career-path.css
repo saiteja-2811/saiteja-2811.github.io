@@ -1,0 +1,299 @@
+/* Career Path Timeline Section */
+.career-path {
+    background-color: #f9fafb;
+    padding: 5rem 0;
+    border-top: 2px solid #e5e7eb;
+}
+
+.career-path .section-title {
+    text-align: left;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+}
+
+.career-path .highlight {
+    color: #2563eb;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
+}
+
+/* Continuous connecting line behind all icons */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: calc(3rem + 35px);
+    left: calc(2rem + 35px);
+    right: calc(2rem + 35px);
+    height: 3px;
+    background-color: #e5e7eb;
+    z-index: 0;
+}
+
+.timeline-item {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.timeline-marker {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 2;
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-marker svg {
+    width: 36px;
+    height: 36px;
+    stroke-width: 2.5;
+}
+
+.timeline-item[data-type="education"] .timeline-marker {
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+}
+
+.timeline-item[data-type="work"] .timeline-marker {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.timeline-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-bottom: 4px solid;
+    transition: all 0.3s;
+    text-align: center;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.timeline-item[data-step="1"] .timeline-content {
+    border-bottom-color: #93c5fd;
+}
+
+.timeline-item[data-step="2"] .timeline-content {
+    border-bottom-color: #60a5fa;
+}
+
+.timeline-item[data-step="3"] .timeline-content {
+    border-bottom-color: #3b82f6;
+}
+
+.timeline-item[data-step="4"] .timeline-content {
+    border-bottom-color: #2563eb;
+}
+
+.timeline-item[data-step="5"] .timeline-content {
+    border-bottom-color: #1d4ed8;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-content h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.timeline-content .company {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-bottom: 0.25rem;
+    line-height: 1.4;
+}
+
+.timeline-content .duration {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .timeline {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .timeline-item {
+        flex: 1 1 calc(50% - 1rem);
+        min-width: 200px;
+    }
+
+    .timeline-item::before {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .career-path .section-title {
+        padding-left: 1rem;
+        font-size: 2rem;
+    }
+
+    .timeline {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .timeline-item {
+        width: 100%;
+    }
+
+    .timeline-item::before {
+        display: none;
+    }
+
+    .timeline-marker {
+        width: 60px;
+        height: 60px;
+    }
+
+    .timeline-content {
+        min-height: 120px;
+        padding: 1rem 1.25rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 0.9rem;
+    }
+
+    .timeline-content .company {
+        font-size: 0.75rem;
+    }
+
+    .timeline-content .duration {
+        font-size: 0.7rem;
+    }
+}
+
+/* Timeline Details Styles */
+.timeline-details {
+    margin-top: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #2563eb;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.details-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e40af;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.details-content h4:first-child {
+    margin-top: 0;
+}
+
+.details-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.details-content ul li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.details-content ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.details-content p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+}
+
+/* Expanded state for timeline items */
+.timeline-item.expanded {
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+
+.timeline-item.expanded .timeline-content {
+    transform: translateY(0);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.2);
+}
+
+/* Transition for hiding/showing items */
+.timeline-item {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    flex-shrink: 0;
+    min-width: 0;
+}
+
+/* Keep timeline items in layout even when content is hidden */
+.timeline-item .timeline-content[style*="display: none"] {
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+/* Hover effect for clickable items */
+.timeline-item:hover .timeline-content {
+    border-bottom-width: 6px;
+}
+
+.timeline-item:hover .timeline-marker {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
