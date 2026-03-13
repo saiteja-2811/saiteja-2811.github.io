@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 500" width="800" height="500">
+  <!-- Light background -->
+  <rect width="800" height="500" fill="#f0f4f8"/>
+  
+  <!-- Animated cash bills in background (flowing from left to right) -->
+  <g opacity="0.4">
+    <!-- Cash bill 1 -->
+    <g>
+      <path d="M 50,100 Q 65,92 80,100 Q 95,108 110,100 Q 95,92 80,100 Q 65,108 50,100" fill="#7cb342" stroke="#558b2f" stroke-width="2"/>
+      <text x="80" y="105" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">$</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 700,50; 0,0" dur="4s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Cash bill 2 -->
+    <g>
+      <path d="M 30,200 Q 45,192 60,200 Q 75,208 90,200 Q 75,192 60,200 Q 45,208 30,200" fill="#7cb342" stroke="#558b2f" stroke-width="2"/>
+      <text x="60" y="205" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">$</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 700,-20; 0,0" dur="4.5s" begin="0.5s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Cash bill 3 -->
+    <g>
+      <path d="M 40,300 Q 55,292 70,300 Q 85,308 100,300 Q 85,292 70,300 Q 55,308 40,300" fill="#7cb342" stroke="#558b2f" stroke-width="2"/>
+      <text x="70" y="305" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">$</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 700,-80; 0,0" dur="5s" begin="1s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Cash bill 4 -->
+    <g>
+      <path d="M 60,150 Q 75,142 90,150 Q 105,158 120,150 Q 105,142 90,150 Q 75,158 60,150" fill="#7cb342" stroke="#558b2f" stroke-width="2"/>
+      <text x="90" y="155" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">$</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 700,20; 0,0" dur="4.2s" begin="1.5s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Cash bill 5 -->
+    <g>
+      <path d="M 20,250 Q 35,242 50,250 Q 65,258 80,250 Q 65,242 50,250 Q 35,258 20,250" fill="#7cb342" stroke="#558b2f" stroke-width="2"/>
+      <text x="50" y="255" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">$</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 700,0; 0,0" dur="4.8s" begin="2s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Cash bill 6 -->
+    <g>
+      <path d="M 45,350 Q 60,342 75,350 Q 90,358 105,350 Q 90,342 75,350 Q 60,358 45,350" fill="#7cb342" stroke="#558b2f" stroke-width="2"/>
+      <text x="75" y="355" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">$</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 700,-100; 0,0" dur="5.2s" begin="2.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  
+  <!-- Left Icon: Bigtable (funnel) -->
+  <image x="50" y="150" width="200" height="200" xlink:href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%234285f4' d='M57.6 0L0 96v320l57.6 96h396.8l57.6-96V96L454.4 0H57.6z'/%3E%3Cpath fill='%2390caf9' opacity='0.6' d='M128 128l128-64 128 64v64l-128 64-128-64v-64z'/%3E%3Cpath fill='%2364b5f6' opacity='0.8' d='M128 256l128-64 128 64v64l-128 64-128-64v-64z'/%3E%3Cpath fill='%2342a5f5' d='M128 384l128-64 128 64v64l-128 64-128-64v-64z'/%3E%3Ccircle cx='128' cy='128' r='12' fill='%2390caf9'/%3E%3Ccircle cx='256' cy='96' r='12' fill='%2390caf9'/%3E%3Ccircle cx='384' cy='128' r='12' fill='%2390caf9'/%3E%3Ccircle cx='192' cy='160' r='8' fill='%2364b5f6'/%3E%3Ccircle cx='320' cy='160' r='8' fill='%2364b5f6'/%3E%3Ccircle cx='256' cy='320' r='16' fill='%231976d2'/%3E%3C/svg%3E"/>
+  
+  <!-- Right Icon: Vertex AI (hexagon with layers) -->
+  <image x="550" y="150" width="200" height="200" xlink:href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath fill='%234285f4' d='M512 0L128 256v512l384 256 384-256V256L512 0z'/%3E%3Cpath fill='white' opacity='0.9' d='M512 256L256 384v256l256 128 256-128V384L512 256z'/%3E%3Crect x='356' y='456' width='312' height='32' fill='white' opacity='0.9'/%3E%3Crect x='356' y='512' width='312' height='32' fill='white' opacity='0.9'/%3E%3Crect x='356' y='568' width='312' height='32' fill='white' opacity='0.9'/%3E%3C/svg%3E"/>
+  
+</svg>

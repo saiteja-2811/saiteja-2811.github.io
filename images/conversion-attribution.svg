@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- Light background -->
+  <rect width="800" height="500" fill="#e8eef3"/>
+  
+  <!-- Decorative circles in background -->
+  <circle cx="100" cy="100" r="25" fill="#90caf9" opacity="0.3"/>
+  <circle cx="700" cy="120" r="30" fill="#64b5f6" opacity="0.3"/>
+  <circle cx="150" cy="400" r="20" fill="#42a5f5" opacity="0.3"/>
+  <circle cx="650" cy="380" r="35" fill="#2196f3" opacity="0.3"/>
+  
+  <!-- Central store icon -->
+  <g transform="translate(400, 250)">
+    <!-- Store building -->
+    <rect x="-60" y="-40" width="120" height="100" rx="5" fill="#2196f3" opacity="0.9"/>
+    
+    <!-- Store awning -->
+    <path d="M -70,-40 L -60,-50 L 60,-50 L 70,-40 Z" fill="#1976d2"/>
+    <rect x="-70" y="-50" width="20" height="10" fill="#1565c0"/>
+    <rect x="-40" y="-50" width="20" height="10" fill="#1565c0"/>
+    <rect x="-10" y="-50" width="20" height="10" fill="#1565c0"/>
+    <rect x="20" y="-50" width="20" height="10" fill="#1565c0"/>
+    <rect x="50" y="-50" width="20" height="10" fill="#1565c0"/>
+    
+    <!-- Store window -->
+    <rect x="-40" y="-20" width="30" height="30" rx="3" fill="#bbdefb"/>
+    <rect x="10" y="-20" width="30" height="30" rx="3" fill="#bbdefb"/>
+    
+    <!-- Store door -->
+    <rect x="-15" y="20" width="30" height="40" rx="3" fill="#1565c0"/>
+    <circle cx="5" cy="40" r="2" fill="#90caf9"/>
+  </g>
+  
+  <!-- Factor 1: Mobile Phone (top-left) -->
+  <g transform="translate(150, 100)">
+    <rect x="-20" y="-35" width="40" height="70" rx="5" fill="#42a5f5" opacity="0.9"/>
+    <rect x="-15" y="-28" width="30" height="50" rx="2" fill="#bbdefb"/>
+    <circle cx="0" cy="30" r="3" fill="#1976d2"/>
+  </g>
+  
+  <!-- Arrow from Mobile to Center -->
+  <path d="M 170 120 Q 250 150, 340 230" stroke="#42a5f5" stroke-width="3" fill="none" opacity="0.7">
+    <animate attributeName="stroke-dasharray" values="0,300;300,0" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Factor 2: Desktop Computer (top-right) -->
+  <g transform="translate(650, 100)">
+    <rect x="-30" y="-25" width="60" height="40" rx="3" fill="#1e88e5" opacity="0.9"/>
+    <rect x="-25" y="-20" width="50" height="30" rx="1" fill="#bbdefb"/>
+    <rect x="-15" y="18" width="30" height="3" fill="#1565c0"/>
+    <rect x="-20" y="21" width="40" height="5" rx="2" fill="#1565c0"/>
+  </g>
+  
+  <!-- Arrow from Desktop to Center -->
+  <path d="M 630 120 Q 550 150, 460 230" stroke="#1e88e5" stroke-width="3" fill="none" opacity="0.7">
+    <animate attributeName="stroke-dasharray" values="0,300;300,0" dur="2.3s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Factor 3: Location Pin (bottom-left) -->
+  <g transform="translate(150, 400)">
+    <path d="M 0,-30 Q -20,-30 -20,-10 Q -20,5 0,30 Q 20,5 20,-10 Q 20,-30 0,-30 Z" 
+          fill="#64b5f6" opacity="0.9" stroke="#1976d2" stroke-width="2"/>
+    <circle cx="0" cy="-10" r="8" fill="white"/>
+  </g>
+  
+  <!-- Arrow from Location to Center -->
+  <path d="M 170 380 Q 250 340, 340 270" stroke="#64b5f6" stroke-width="3" fill="none" opacity="0.7">
+    <animate attributeName="stroke-dasharray" values="0,300;300,0" dur="2.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Factor 4: Social Media/People (bottom-right) -->
+  <g transform="translate(650, 400)">
+    <!-- Three people icons -->
+    <g transform="translate(-15, 0)">
+      <circle cx="0" cy="-15" r="6" fill="#2196f3"/>
+      <path d="M -8,-8 L -8,8 L -4,8 L -4,0 L 4,0 L 4,8 L 8,8 L 8,-8 Z" fill="#2196f3"/>
+    </g>
+    <g transform="translate(15, 0)">
+      <circle cx="0" cy="-15" r="6" fill="#1976d2"/>
+      <path d="M -8,-8 L -8,8 L -4,8 L -4,0 L 4,0 L 4,8 L 8,8 L 8,-8 Z" fill="#1976d2"/>
+    </g>
+  </g>
+  
+  <!-- Arrow from Social to Center -->
+  <path d="M 630 380 Q 550 340, 460 270" stroke="#2196f3" stroke-width="3" fill="none" opacity="0.7">
+    <animate attributeName="stroke-dasharray" values="0,300;300,0" dur="2.7s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Factor 5: Inflation/External Factors (left-middle) -->
+  <g transform="translate(100, 250)">
+    <!-- Arrow pointing up (inflation) -->
+    <path d="M 0,-25 L -15,5 L -5,5 L -5,25 L 5,25 L 5,5 L 15,5 Z" fill="#90caf9" opacity="0.9" stroke="#1976d2" stroke-width="2"/>
+    <!-- Dollar sign -->
+    <text x="0" y="10" font-family="Arial" font-size="18" font-weight="bold" fill="#1976d2" text-anchor="middle">$</text>
+  </g>
+  
+  <!-- Arrow from Email to Center -->
+  <path d="M 130 250 L 340 250" stroke="#90caf9" stroke-width="3" fill="none" opacity="0.7">
+    <animate attributeName="stroke-dasharray" values="0,220;220,0" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Factor 6: Weather/Climate (right-middle) -->
+  <g transform="translate(700, 250)">
+    <!-- Cloud shape -->
+    <ellipse cx="0" cy="0" rx="30" ry="18" fill="#1565c0" opacity="0.9"/>
+    <ellipse cx="-18" cy="5" rx="22" ry="15" fill="#1565c0" opacity="0.9"/>
+    <ellipse cx="18" cy="5" rx="22" ry="15" fill="#1565c0" opacity="0.9"/>
+    <!-- Rain drops -->
+    <line x1="-15" y1="20" x2="-15" y2="30" stroke="#42a5f5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="20" x2="0" y2="30" stroke="#42a5f5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="15" y1="20" x2="15" y2="30" stroke="#42a5f5" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Arrow from Cart to Center -->
+  <path d="M 670 250 L 460 250" stroke="#1565c0" stroke-width="3" fill="none" opacity="0.7">
+    <animate attributeName="stroke-dasharray" values="0,220;220,0" dur="2.2s" repeatCount="indefinite"/>
+  </path>
+  
+</svg>

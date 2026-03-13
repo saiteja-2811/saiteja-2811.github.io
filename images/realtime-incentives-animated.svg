@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  
+  <!-- Left: Vertex AI Icon (simplified hexagon with layers) -->
+  <g transform="translate(200, 250)">
+    <!-- Hexagon background -->
+    <path d="M 0,-60 L 52,-30 L 52,30 L 0,60 L -52,30 L -52,-30 Z" fill="#4285f4" opacity="0.9"/>
+    <!-- Stacked layers inside -->
+    <rect x="-30" y="-10" width="60" height="8" fill="white" opacity="0.9"/>
+    <rect x="-30" y="2" width="60" height="8" fill="white" opacity="0.9"/>
+    <rect x="-30" y="14" width="60" height="8" fill="white" opacity="0.9"/>
+    <!-- Label -->
+    <text x="0" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#1967d2" text-anchor="middle">Vertex AI</text>
+  </g>
+  
+  <!-- Right: Bigtable Icon (funnel with data flow) -->
+  <g transform="translate(600, 250)">
+    <!-- Funnel shape -->
+    <path d="M -40,-50 L 40,-50 L 20,20 L -20,20 Z" fill="#4285f4" opacity="0.9"/>
+    <ellipse cx="0" cy="20" rx="20" ry="8" fill="#1967d2"/>
+    <!-- Data dots -->
+    <circle cx="-20" cy="-40" r="4" fill="#64b5f6"/>
+    <circle cx="0" cy="-35" r="4" fill="#64b5f6"/>
+    <circle cx="20" cy="-40" r="4" fill="#64b5f6"/>
+    <!-- Label -->
+    <text x="0" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#1967d2" text-anchor="middle">Bigtable</text>
+  </g>
+  
+  <!-- Animated Kohl's Cash flowing from left to right -->
+  <g id="cash1">
+    <g transform="translate(250, 250)">
+      <!-- Kohl's Cash representation (green curved bill) -->
+      <path d="M 0,0 Q 15,-8 30,0 Q 15,8 0,0" fill="#7cb342" stroke="#558b2f" stroke-width="1"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">$</text>
+    </g>
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0,0; 350,0; 0,0"
+      dur="3s"
+      repeatCount="indefinite"/>
+  </g>
+  
+  <g id="cash2">
+    <g transform="translate(250, 230)">
+      <path d="M 0,0 Q 15,-8 30,0 Q 15,8 0,0" fill="#7cb342" stroke="#558b2f" stroke-width="1"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">$</text>
+    </g>
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0,0; 350,0; 0,0"
+      dur="3s"
+      begin="0.5s"
+      repeatCount="indefinite"/>
+  </g>
+  
+  <g id="cash3">
+    <g transform="translate(250, 270)">
+      <path d="M 0,0 Q 15,-8 30,0 Q 15,8 0,0" fill="#7cb342" stroke="#558b2f" stroke-width="1"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">$</text>
+    </g>
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0,0; 350,0; 0,0"
+      dur="3s"
+      begin="1s"
+      repeatCount="indefinite"/>
+  </g>
+  
+  <g id="cash4">
+    <g transform="translate(250, 210)">
+      <path d="M 0,0 Q 15,-8 30,0 Q 15,8 0,0" fill="#7cb342" stroke="#558b2f" stroke-width="1"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">$</text>
+    </g>
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0,0; 350,0; 0,0"
+      dur="3s"
+      begin="1.5s"
+      repeatCount="indefinite"/>
+  </g>
+  
+  <g id="cash5">
+    <g transform="translate(250, 290)">
+      <path d="M 0,0 Q 15,-8 30,0 Q 15,8 0,0" fill="#7cb342" stroke="#558b2f" stroke-width="1"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">$</text>
+    </g>
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0,0; 350,0; 0,0"
+      dur="3s"
+      begin="2s"
+      repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Arrow indicating flow direction -->
+  <path d="M 280,180 L 520,180" stroke="#1967d2" stroke-width="2" fill="none" opacity="0.3"/>
+  <polygon points="520,180 510,175 510,185" fill="#1967d2" opacity="0.3"/>
+  
+  <!-- Title -->
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#1967d2" text-anchor="middle">Real-Time Incentive Serving</text>
+  <text x="400" y="475" font-family="Arial, sans-serif" font-size="14" fill="#5f6368" text-anchor="middle">Vertex AI → Bigtable • $55M Revenue Impact</text>
+</svg>
